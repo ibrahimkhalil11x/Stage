@@ -25,7 +25,7 @@ app.post("/login", async (req, res) => {
     const result = await client.query(sqlget, [matricule, password]);
 
     if (result.rows.length === 0) {
-      return res.json({ message: "ID ou mot de passe incorrect" });
+      return res.json({ message: "ID ou mot de passe incorrect " });
     }
 
     const user = result.rows[0];
