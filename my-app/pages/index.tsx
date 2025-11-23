@@ -40,7 +40,7 @@ const Index = () => {
 
       console.log("Réponse du serveur:", response.data);
 
-      if (response.data.message === "Matricule ou mot de passe incorrect") {
+      if (response.data.message === "Matricule ou mot de passe incorrect ") {
         setErrorMessage("Matricule ou mot de passe incorrect.");
         return;
       }
